@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - Siman El Salvador</title>
+  <link rel="stylesheet" href="./Styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html" class="logo">◆SIMAN</a>
+    <div class="nav-icons">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar productos...">
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+      </div>
+      <a href="#" class="icon-link"><i class="far fa-user"></i></a>
+      <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </nav>
+</header>
+
+<!-- Navbar secundario -->
+<nav class="secondary-navbar">
+  <div class="secondary-nav-container">
+    <div class="departments-section">
+      <button class="hamburger-menu">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="departments-text">CATEGORÍAS</span>
+      </button>
+      <div class="dropdown-menu">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="Productos.html"><i class="fas fa-shopping-bag"></i> Productos</a>
+        <a href="Sobre_nosotros.html"><i class="fas fa-info-circle"></i> Sobre nosotros</a>
+      </div>
+    </div>
+    <ul class="secondary-nav-links">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="Productos.html">PRODUCTOS</a></li>
+      <li><a href="Sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contactos Section -->
+<section class="contactos-section">
+  <div class="container">
+    <h1 class="section-title">CONTÁCTANOS</h1>
+
+    <div class="contactos-grid">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+        <h3 class="contact-title">Teléfono</h3>
+        <div class="contact-info">
+          <a href="tel:+50322505050">+503 2250-5050</a>
+        </div>
+        <div class="contact-info">
+          <a href="tel:+50322505051">+503 2250-5051</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <h3 class="contact-title">Email</h3>
+        <div class="contact-info">
+          <a href="mailto:info@siman.com">info@siman.com</a>
+        </div>
+        <div class="contact-info">
+          <a href="mailto:ventas@siman.com">ventas@siman.com</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3 class="contact-title">Oficina Central</h3>
+        <div class="contact-info">
+          Km. 10.5 Carretera a Santa Tecla<br>
+          Santa Tecla, La Libertad<br>
+          El Salvador
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <h3 class="contact-title">WhatsApp</h3>
+        <div class="contact-info">
+          <a href="https://wa.me/50370505050">+503 7050-5050</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-hashtag"></i></div>
+        <h3 class="contact-title">Redes Sociales</h3>
+        <div class="contact-info">
+          <a href="#">@SimanElSalvador</a>
+        </div>
+        <div class="contact-info">
+          <a href="#">facebook.com/siman</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="far fa-clock"></i></div>
+        <h3 class="contact-title">Atención al Cliente</h3>
+        <div class="contact-info">
+          Lunes a Viernes: 8:00 AM - 6:00 PM
+        </div>
+        <div class="contact-info">
+          Sábados: 8:00 AM - 4:00 PM
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formulario de Contacto -->
+<section class="form-section">
+  <div class="form-container">
+    <h2 class="form-title">ENVÍANOS UN MENSAJE</h2>
+
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Selecciona un asunto</option>
+            <option value="consulta">Consulta General</option>
+            <option value="queja">Queja o Reclamo</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="producto">Consulta sobre Producto</option>
+            <option value="devolucion">Devolución</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+    </form>
+  </div>
+</section>
+
+<!-- Horarios y Ubicaciones -->
+<section class="info-section">
+  <div class="container">
+    <h2 class="section-title">NUESTRAS TIENDAS</h2>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Tiendas San Salvador</h3>
+        <div class="store-item">
+          <div class="store-name">Simán Centro</div>
+          <div class="store-address">Centro Comercial Galerías, San Salvador</div>
+        </div>
+        <div class="store-item">
+          <div class="store-name">Simán Metrocentro</div>
+          <div class="store-address">Centro Comercial Metrocentro, San Salvador</div>
+        </div>
+        <div class="store-item">
+          <div class="store-name">Simán Multiplaza</div>
+          <div class="store-address">Multiplaza, San Salvador</div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>Horarios de Atención</h3>
+        <p><strong>Lunes a Jueves:</strong> 10:00 AM - 8:00 PM</p>
+        <p><strong>Viernes y Sábados:</strong> 10:00 AM - 9:00 PM</p>
+        <p><strong>Domingos:</strong> 11:00 AM - 7:00 PM</p>
+        <p><strong>Días Festivos:</strong> Horario especial</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Servicios Adicionales</h3>
+        <p>• Entrega a domicilio</p>
+        <p>• Compras en línea</p>
+        <p>• Tarjeta de crédito Simán</p>
+        <p>• Programa de fidelidad</p>
+        <p>• Servicio post-venta</p>
+        <p>• Garantía extendida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>TIENDAS SIMAN</h3>
+        <ul class="footer-links">
+          <li><a href="sobre_nosotros.html">Encuentra tu tienda</a></li>
+          <li><a href="sobre_nosotros.html">Horarios y ubicaciones</a></li>
+          <li><a href="sobre_nosotros.html">Servicios en tienda</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>SERVICIOS</h3>
+        <ul class="footer-links">
+          <li><a href="#">Crédito Siman</a></li>
+          <li><a href="#">Facturación electrónica</a></li>
+          <li><a href="#">Garantías y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>SOBRE SIMAN</h3>
+        <ul class="footer-links">
+          <li><a href="sobre_nosotros.html">Nuestra historia</a></li>
+          <li><a href="sobre_nosotros.html">Trabaja con nosotros</a></li>
+          <li><a href="sobre_nosotros.html">Responsabilidad social</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>CONTÁCTANOS</h3>
+        <ul class="footer-links">
+          <li><a href="sobre_nosotros.html">Centro de ayuda</a></li>
+          <li><a href="sobre_nosotros.html">Preguntas frecuentes</a></li>
+          <li><a href="#">Teléfono: (503) 2525-2525</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Siman El Salvador. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
