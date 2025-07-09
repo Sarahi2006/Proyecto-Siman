@@ -3,144 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siman El Salvador - Ofertas Exclusivas</title>
+    <title>Siman El Salvador - Tienda Departamental</title>
+    <link rel="icon" href="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/706b4606-8eaf-4c3c-80c6-f428f32fa80e___c0e8cd3ea762f9db4b2bd7751174f7fa.svg" type="image/x-icon">
     <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <header>
     <nav>
-        <a href="#" class="logo">SIMAN</a>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="Productos.html">Productos</a></li>
-            <li><a href="Sobre_nosotros.html">Nosotros</a></li>
-        </ul>
+        <a href="index.html" class="logo">◆SIMAN.COM</a>
+        <div class="nav-icons">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar productos...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <a href="#" class="icon-link"><i class="far fa-user"></i></a>
+            <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+        </div>
     </nav>
 </header>
 
-<div class="card text-bg-dark">
-    <img src="./assets/adidas_rebajas.png" class="card-img" alt="...">
+<!-- Navbar secundario -->
+<nav class="secondary-navbar">
+    <div class="secondary-nav-container">
+        <div class="departments-section">
+            <button class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="departments-text">CATEGORÍAS</span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="Productos.html"><i class="fas fa-shopping-bag"></i> Productos</a>
+                <a href="Sobre_nosotros.html"><i class="fas fa-info-circle"></i> Sobre nosotros</a>
+            </div>
+        </div>
+        <ul class="secondary-nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="Productos.html">PRODUCTOS</a></li>
+            <li><a href="Sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Banner -->
+<div class="hero-banner">
+    <img src="./assets/images/adidas_rebajas.png" alt="Ofertas Siman">
+    <div class="banner-content">
+        <h1 class="banner-title">CYBER DAYS 2023</h1>
+        <p class="banner-subtitle">Las mejores ofertas del año con hasta 70% de descuento</p>
+        <a href="productos.html" class="banner-btn">VER OFERTAS</a>
+    </div>
 </div>
 
-<section class="categories">
-    <div class="card-img-overlay">
-        <h5 class="card-title">Nuestras Categorias.</h5>
-    </div>
-    <div class="categories-grid">
-        <div class="category-card">
-            <div class="category-icon">👟</div>
-            <div class="category-name">Calzado</div>
-        </div>
-        <div class="category-card">
-            <div class="category-icon">🧴</div>
-            <div class="category-name">Belleza</div>
-        </div>
-        <div class="category-card">
-            <div class="category-icon">🏋️‍♂️</div>
-            <div class="category-name">Deportes</div>
-        </div>
-        <div class="category-card">
-            <div class="category-icon">👗</div>
-            <div class="category-name">Moda Mujer</div>
-        </div>
-        <div class="category-card">
-            <div class="category-icon">👔</div>
-            <div class="category-name">Moda Hombre</div>
-        </div>
-        <div class="category-card">
-            <div class="category-icon">💻️</div>
-            <div class="category-name">Electronicos</div>
-        </div>
-        <div class="category-card">
-            <div class="category-icon">🎮</div>
-            <div class="category-name">Juegos</div>
-        </div>
-    </div>
-</section>
-
-<section class="promociones">
-    <div class="container">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Ofertas Especiales.</h5>
-        </div>
-        <div class="promociones-grid">
-            <div class="promo-card">
-                <div class="promo-image">
-                    👕
-                    <div class="discount-badge">50% OFF</div>
+<!-- Productos Destacados -->
+<section class="productos-section">
+    <div class="productos-container">
+        <h2 class="section-title">PRODUCTOS DESTACADOS</h2>
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="./assets/images/Iphone15.webp" alt="iPhone 15 Pro Max">
+                    <span class="producto-badge">NUEVO</span>
                 </div>
-                <div class="promo-content">
-                    <h3 class="promo-title">Ropa de Temporada</h3>
-                    <p class="promo-description">Encuentra la mejor selección de ropa para toda la familia con descuentos increíbles.</p>
-                    <div class="promo-price">
-                        <span class="old-price">$80.00</span>
-                        <span class="new-price">$40.00</span>
+                <div class="producto-contenido">
+                    <h3 class="producto-titulo">iPhone 15 Pro Max 256GB</h3>
+                    <p class="producto-marca">Apple</p>
+                    <div class="producto-precio">
+                        <span class="producto-precio-original">$1,499.00</span>
+                        $1,299.00
                     </div>
-                    <a href="#" class="promo-button">Comprar Ahora</a>
+                    <a href="productos.html" class="boton-comprar">VER DETALLES</a>
                 </div>
             </div>
 
-            <div class="promo-card">
-                <div class="promo-image">
-                    🏠
-                    <div class="discount-badge">25% OFF</div>
+            <!-- Producto 2 -->
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="./assets/images/S23%20ultra.webp" alt="Samsung Galaxy S23 Ultra">
+                    <span class="producto-badge">OFERTA</span>
                 </div>
-                <div class="promo-content">
-                    <h3 class="promo-title">Hogar y Decoración</h3>
-                    <p class="promo-description">Renueva tu hogar con nuestra colección de muebles y accesorios decorativos.</p>
-                    <div class="promo-price">
-                        <span class="old-price">$200.00</span>
-                        <span class="new-price">$150.00</span>
+                <div class="producto-contenido">
+                    <h3 class="producto-titulo">Samsung Galaxy S23 Ultra</h3>
+                    <p class="producto-marca">Samsung</p>
+                    <div class="producto-precio">
+                        <span class="producto-precio-original">$1,199.00</span>
+                        $999.00
                     </div>
-                    <a href="#" class="promo-button">Comprar Ahora</a>
+                    <a href="productos.html" class="boton-comprar">VER DETALLES</a>
                 </div>
             </div>
 
-            <div class="promo-card">
-                <div class="promo-image">
-                    📱
-                    <div class="discount-badge">35% OFF</div>
+            <!-- Producto 3 -->
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="./assets/images/Mac.webp" alt="MacBook Air M2">
                 </div>
-                <div class="promo-content">
-                    <h3 class="promo-title">Tecnología</h3>
-                    <p class="promo-description">Los últimos dispositivos tecnológicos con la mejor calidad y garantía.</p>
-                    <div class="promo-price">
-                        <span class="old-price">$500.00</span>
-                        <span class="new-price">$325.00</span>
+                <div class="producto-contenido">
+                    <h3 class="producto-titulo">MacBook Air M2 13"</h3>
+                    <p class="producto-marca">Apple</p>
+                    <div class="producto-precio">
+                        <span class="producto-precio-original">$1,299.00</span>
+                        $1,099.00
                     </div>
-                    <a href="#" class="promo-button">Comprar Ahora</a>
+                    <a href="productos.html" class="boton-comprar">VER DETALLES</a>
                 </div>
             </div>
 
-            <div class="promo-card">
-                <div class="promo-image">
-                    🎒
-                    <div class="discount-badge">45% OFF</div>
+            <!-- Producto 4 -->
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="./assets/images/Sony.webp" alt="Sony WH-1000XM5">
+                    <span class="producto-badge">POPULAR</span>
                 </div>
-                <div class="promo-content">
-                    <h3 class="promo-title">Accesorios</h3>
-                    <p class="promo-description">Bolsos, carteras, cinturones y más accesorios para completar tu look.</p>
-                    <div class="promo-price">
-                        <span class="old-price">$60.00</span>
-                        <span class="new-price">$33.00</span>
+                <div class="producto-contenido">
+                    <h3 class="producto-titulo">Audífonos Sony WH-1000XM5</h3>
+                    <p class="producto-marca">Sony</p>
+                    <div class="producto-precio">
+                        <span class="producto-precio-original">$349.00</span>
+                        $299.00
                     </div>
-                    <a href="#" class="promo-button">Comprar Ahora</a>
+                    <a href="productos.html" class="boton-comprar">VER DETALLES</a>
                 </div>
             </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="productos.html" class="boton-comprar" style="padding: 0.8rem 2rem; display: inline-block;">VER TODOS LOS PRODUCTOS</a>
         </div>
     </div>
 </section>
 
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="newsletter-container">
+        <h2 class="newsletter-title">SUSCRÍBETE A NUESTRO NEWSLETTER</h2>
+        <p class="newsletter-subtitle">Recibe las últimas ofertas y novedades directamente en tu correo</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="newsletter-btn">SUSCRIBIRME</button>
+        </form>
+    </div>
+</section>
 
+<!-- Footer -->
 <footer>
-    <div class="footer-content">
-        <div class="footer-links">
-            <a href="#">Faceboock</a>
-            <a href="#">Instagram</a>
-            <a href="#">Tiktok</a>
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>TIENDAS SIMAN</h3>
+                <ul class="footer-links">
+                    <li><a href="sobre-nosotros.html">Encuentra tu tienda</a></li>
+                    <li><a href="sobre-nosotros.html">Horarios y ubicaciones</a></li>
+                    <li><a href="sobre-nosotros.html">Servicios en tienda</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>SERVICIOS</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Crédito Siman</a></li>
+                    <li><a href="#">Facturación electrónica</a></li>
+                    <li><a href="#">Garantías y devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>SOBRE SIMAN</h3>
+                <ul class="footer-links">
+                    <li><a href="sobre-nosotros.html">Nuestra historia</a></li>
+                    <li><a href="sobre-nosotros.html">Trabaja con nosotros</a></li>
+                    <li><a href="sobre-nosotros.html">Responsabilidad social</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>CONTÁCTANOS</h3>
+                <ul class="footer-links">
+                    <li><a href="sobre-nosotros.html">Centro de ayuda</a></li>
+                    <li><a href="sobre-nosotros.html">Preguntas frecuentes</a></li>
+                    <li><a href="tel:+50325252525">Teléfono: (503) 2525-2525</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Siman El Salvador. Todos los derechos reservados.</p>
+            <p>&copy; 2023 Siman El Salvador. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
